@@ -15,6 +15,7 @@ const Header = () => {
         
         <nav className="hidden md:flex space-x-8">
           <Link to="/" className="text-gray-700 hover:text-investment-700 font-medium">Home</Link>
+          <Link to="#about-founder" className="text-gray-700 hover:text-investment-700 font-medium">About Abhishek</Link>
           <Link to="#investment-thesis" className="text-gray-700 hover:text-investment-700 font-medium">Investment Thesis</Link>
           <Link to="#portfolio" className="text-gray-700 hover:text-investment-700 font-medium">Portfolio</Link>
           <Link to="/submit" className="text-gray-700 hover:text-investment-700 font-medium">Submit</Link>

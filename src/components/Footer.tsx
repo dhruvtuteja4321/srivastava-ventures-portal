@@ -20,6 +20,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li><Link to="/" className="hover:text-gold-400 transition-colors">Home</Link></li>
+              <li><Link to="#about-founder" className="hover:text-gold-400 transition-colors">About Abhishek</Link></li>
               <li><Link to="#investment-thesis" className="hover:text-gold-400 transition-colors">Investment Thesis</Link></li>
               <li><Link to="#portfolio" className="hover:text-gold-400 transition-colors">Portfolio</Link></li>
               <li><Link to="/submit" className="hover:text-gold-400 transition-colors">Submit a Proposal</Link></li>
@@ -28,9 +29,9 @@ const Footer = () => {
           
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
-            <p className="mb-2">New Delhi, India</p>
-            <p className="mb-2">Email: info@srivastavaventures.com</p>
-            <p className="mb-4">Phone: +91 123 456 7890</p>
+            <p className="mb-2">Downtown Dallas, DFW, Texas</p>
+            <p className="mb-2">Email: abhishek@srivastavaventures.com</p>
+            <p className="mb-4">Phone: +1 (214) 123-4567</p>
           </div>
         </div>
         

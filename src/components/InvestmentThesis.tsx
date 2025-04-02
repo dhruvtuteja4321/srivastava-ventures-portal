@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Cpu, Rocket, Car, Atom, Leaf, ChartLine } from "lucide-react";
 
 const InvestmentThesis = () => {
   return (
@@ -17,7 +18,10 @@ const InvestmentThesis = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card className="border-t-4 border-t-investment-600 shadow-md hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Technology</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <Cpu className="h-5 w-5 text-investment-600" />
+                Technology
+              </CardTitle>
               <CardDescription>Disruptive platforms and solutions</CardDescription>
             </CardHeader>
             <CardContent>
@@ -30,7 +34,10 @@ const InvestmentThesis = () => {
           
           <Card className="border-t-4 border-t-gold-500 shadow-md hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Healthcare</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <ChartLine className="h-5 w-5 text-gold-500" />
+                Healthcare
+              </CardTitle>
               <CardDescription>Innovative health solutions</CardDescription>
             </CardHeader>
             <CardContent>
@@ -43,33 +50,91 @@ const InvestmentThesis = () => {
           
           <Card className="border-t-4 border-t-investment-600 shadow-md hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Sustainable Solutions</CardTitle>
-              <CardDescription>Environmentally focused ventures</CardDescription>
+              <CardTitle className="flex items-center gap-2">
+                <Leaf className="h-5 w-5 text-investment-600" />
+                Renewable Energy
+              </CardTitle>
+              <CardDescription>Sustainable power technologies</CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-gray-700">
-                Funding clean energy, green technology, and sustainable business
-                models addressing climate change and environmental challenges.
+                Funding solar, wind, hydrogen, and energy storage technologies 
+                that accelerate the transition to clean, renewable energy sources.
               </p>
             </CardContent>
           </Card>
           
           <Card className="border-t-4 border-t-gold-500 shadow-md hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Consumer Products</CardTitle>
-              <CardDescription>Next-generation brands</CardDescription>
+              <CardTitle className="flex items-center gap-2">
+                <Car className="h-5 w-5 text-gold-500" />
+                Transportation
+              </CardTitle>
+              <CardDescription>Future mobility solutions</CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-gray-700">
-                Partnering with innovative consumer brands disrupting traditional
-                markets with superior products and experiences.
+                Investing in electric vehicles, autonomous driving technologies,
+                and innovative transportation platforms that redefine mobility.
               </p>
             </CardContent>
           </Card>
           
           <Card className="border-t-4 border-t-investment-600 shadow-md hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Financial Innovation</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <Rocket className="h-5 w-5 text-investment-600" />
+                AGI SaaS
+              </CardTitle>
+              <CardDescription>Artificial General Intelligence software</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-700">
+                Supporting platforms leveraging artificial general intelligence
+                to create powerful, adaptable software solutions across industries.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="border-t-4 border-t-gold-500 shadow-md hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <ChartLine className="h-5 w-5 text-gold-500" />
+                Hydrocarbons & Shale Oil
+              </CardTitle>
+              <CardDescription>Energy transition solutions</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-700">
+                Investing in innovative extraction technologies, carbon capture, 
+                and cleaner hydrocarbon solutions during the energy transition phase.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="border-t-4 border-t-investment-600 shadow-md hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Atom className="h-5 w-5 text-investment-600" />
+                Quantum Computing
+              </CardTitle>
+              <CardDescription>Next-generation computing</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-700">
+                Backing quantum hardware, algorithms, and software applications 
+                that will revolutionize computing capabilities and solve previously 
+                intractable problems.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="border-t-4 border-t-gold-500 shadow-md hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <ChartLine className="h-5 w-5 text-gold-500" />
+                Financial Innovation
+              </CardTitle>
               <CardDescription>Transforming financial services</CardDescription>
             </CardHeader>
             <CardContent>
@@ -80,9 +145,12 @@ const InvestmentThesis = () => {
             </CardContent>
           </Card>
           
-          <Card className="border-t-4 border-t-gold-500 shadow-md hover:shadow-lg transition-shadow">
+          <Card className="border-t-4 border-t-investment-600 shadow-md hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Education</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <ChartLine className="h-5 w-5 text-investment-600" />
+                Education
+              </CardTitle>
               <CardDescription>Future of learning</CardDescription>
             </CardHeader>
             <CardContent>

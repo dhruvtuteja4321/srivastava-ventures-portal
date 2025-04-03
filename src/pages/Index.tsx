@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import InvestmentThesis from '@/components/InvestmentThesis';
+import InvestmentAreas from '@/components/InvestmentAreas';
 import ProcessSection from '@/components/ProcessSection';
 import AboutFounder from '@/components/AboutFounder';
 import CtaSection from '@/components/CtaSection';
@@ -18,6 +19,7 @@ const Index = () => {
           <Hero />
           <AboutFounder />
           <InvestmentThesis />
+          <InvestmentAreas />
           <ProcessSection />
           <CtaSection />
         </main>

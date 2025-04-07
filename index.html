@@ -1,26 +1,521 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>srivastava-ventures-portal</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="srivastava-ventures-portal" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <title>Srivastava Ventures</title>
+    <meta name="description" content="Srivastava Ventures - Investment Platform by Abhishek Srivastava" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
-
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="main-wrapper">
+      <div class="background-overlay"></div>
+      <div class="content-wrapper">
+        <!-- Header -->
+        <header class="header">
+          <div class="container header-container">
+            <div class="logo">
+              <a href="/">Srivastava <span class="gold-text">Ventures</span></a>
+            </div>
+            
+            <nav class="desktop-nav">
+              <a href="/" class="nav-link">Home</a>
+              <a href="#about-founder" class="nav-link">About Abhishek</a>
+              <a href="#investment-thesis" class="nav-link">Investment Thesis</a>
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+              <a href="/submit.html" class="nav-link">Submit</a>
+            </nav>
+            
+            <div class="header-cta">
+              <a href="/submit.html" class="button primary-button">Submit Proposal</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          
+          <div class="mobile-menu" id="mobileMenu">
+            <a href="/" class="mobile-nav-link">Home</a>
+            <a href="#about-founder" class="mobile-nav-link">About Abhishek</a>
+            <a href="#investment-thesis" class="mobile-nav-link">Investment Thesis</a>
+            <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+            <a href="/submit.html" class="mobile-nav-link">Submit</a>
+            <a href="/submit.html" class="button primary-button mobile-cta">Submit Proposal</a>
+          </div>
+        </header>
+        
+        <main>
+          <!-- Hero Section -->
+          <section class="section hero">
+            <div class="container">
+              <div class="hero-content">
+                <div class="hero-text">
+                  <h1 class="hero-title">
+                    Funding Your <span class="investment-text">Vision</span>,<br />
+                    Building <span class="gold-text">Tomorrow</span>
+                  </h1>
+                  <p class="hero-subtitle">
+                    Abhishek Srivastava is investing $10,000 to $1,000,000 in innovative 
+                    businesses and ideas that can shape the future.
+                  </p>
+                  <div class="hero-buttons">
+                    <a href="/submit.html" class="button primary-button">Submit Your Idea</a>
+                    <a href="#investment-thesis" class="button outline-button">Learn More</a>
+                  </div>
+                </div>
+                <div class="hero-card">
+                  <div class="hero-card-inner">
+                    <div class="hero-card-content">
+                      <h3 class="card-title">Investment Range</h3>
+                      <div class="investment-range">
+                        <span class="min-range">$10,000</span>
+                        <span class="range-separator">to</span>
+                        <span class="max-range">$1,000,000</span>
+                      </div>
+                      <div class="investment-types">
+                        <div class="investment-type">
+                          <div class="marker"></div>
+                          <p>Pre-Seed & Seed Funding</p>
+                        </div>
+                        <div class="investment-type">
+                          <div class="marker"></div>
+                          <p>Growth Capital</p>
+                        </div>
+                        <div class="investment-type">
+                          <div class="marker"></div>
+                          <p>Strategic Partnerships</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- About Founder Section -->
+          <section class="section about-founder" id="about-founder">
+            <div class="container">
+              <div class="section-header">
+                <h2>About Abhishek Srivastava</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Meet the investor behind Srivastava Ventures</p>
+              </div>
+              
+              <div class="founder-content">
+                <div class="founder-image-container">
+                  <div class="founder-image">
+                    <img src="lovable-uploads/5989118a-bf08-4a81-9343-a8248661f962.png" alt="Abhishek Srivastava" />
+                  </div>
+                  <div class="founder-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fa fa-envelope"></i></a>
+                  </div>
+                </div>
+                
+                <div class="founder-bio">
+                  <div class="bio-card">
+                    <h3>Abhishek Srivastava</h3>
+                    <p class="founder-title">Founder and CFO of Mynx Softwares | CFO at Accident Centers of Texas</p>
+                    
+                    <div class="bio-content">
+                      <p>
+                        Abhishek Srivastava is a seasoned financial executive and entrepreneur based in Downtown Dallas, DFW. 
+                        With his extensive experience in finance and technology, Abhishek brings valuable expertise to the 
+                        table as an angel investor.
+                      </p>
+                      
+                      <p>
+                        As the Founder and CFO of Mynx Softwares, Abhishek has demonstrated his ability to build and scale 
+                        successful technology ventures. Additionally, his role as CFO at Accident Centers of Texas has given 
+                        him deep insights into healthcare management and operations.
+                      </p>
+                      
+                      <p>
+                        Abhishek is passionate about investing in promising startups and innovative businesses across various 
+                        sectors. His investment portfolio ranges from $10,000 to $1,000,000, supporting entrepreneurs at 
+                        different stages of their journey.
+                      </p>
+
+                      <div class="focus-areas">
+                        <h4>Investment Focus</h4>
+                        <div class="focus-tags">
+                          <span class="focus-tag gold">Renewable Energy</span>
+                          <span class="focus-tag investment">Transportation</span>
+                          <span class="focus-tag gold">AGI SaaS</span>
+                          <span class="focus-tag investment">Shale Oil</span>
+                          <span class="focus-tag gold">Quantum Computing</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Investment Thesis Section -->
+          <section class="section investment-thesis" id="investment-thesis">
+            <div class="container">
+              <div class="section-header">
+                <h2>Investment Thesis</h2>
+                <p class="section-subtitle">
+                  Abhishek Srivastava focuses on industries and ventures with significant growth potential
+                  and innovative solutions to real-world problems.
+                </p>
+              </div>
+              
+              <div class="thesis-grid">
+                <div class="thesis-card investment-border">
+                  <div class="thesis-card-header">
+                    <i class="fas fa-microchip thesis-icon investment-text"></i>
+                    <h3>Technology</h3>
+                    <p class="thesis-description">Disruptive platforms and solutions</p>
+                  </div>
+                  <div class="thesis-card-content">
+                    <p>
+                      Investing in SaaS, AI, blockchain, cybersecurity, and other
+                      scalable technology solutions with global market potential.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="thesis-card gold-border">
+                  <div class="thesis-card-header">
+                    <i class="fas fa-chart-line thesis-icon gold-text"></i>
+                    <h3>Healthcare</h3>
+                    <p class="thesis-description">Innovative health solutions</p>
+                  </div>
+                  <div class="thesis-card-content">
+                    <p>
+                      Supporting digital health, biotechnology, and medical devices
+                      that improve patient outcomes and healthcare efficiency.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="thesis-card investment-border">
+                  <div class="thesis-card-header">
+                    <i class="fas fa-leaf thesis-icon investment-text"></i>
+                    <h3>Renewable Energy</h3>
+                    <p class="thesis-description">Sustainable power technologies</p>
+                  </div>
+                  <div class="thesis-card-content">
+                    <p>
+                      Funding solar, wind, hydrogen, and energy storage technologies 
+                      that accelerate the transition to clean, renewable energy sources.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="thesis-card gold-border">
+                  <div class="thesis-card-header">
+                    <i class="fas fa-car thesis-icon gold-text"></i>
+                    <h3>Transportation</h3>
+                    <p class="thesis-description">Future mobility solutions</p>
+                  </div>
+                  <div class="thesis-card-content">
+                    <p>
+                      Investing in electric vehicles, autonomous driving technologies,
+                      and innovative transportation platforms that redefine mobility.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="thesis-card investment-border">
+                  <div class="thesis-card-header">
+                    <i class="fas fa-rocket thesis-icon investment-text"></i>
+                    <h3>AGI SaaS</h3>
+                    <p class="thesis-description">Artificial General Intelligence software</p>
+                  </div>
+                  <div class="thesis-card-content">
+                    <p>
+                      Supporting platforms leveraging artificial general intelligence
+                      to create powerful, adaptable software solutions across industries.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="thesis-card gold-border">
+                  <div class="thesis-card-header">
+                    <i class="fas fa-chart-line thesis-icon gold-text"></i>
+                    <h3>Hydrocarbons & Shale Oil</h3>
+                    <p class="thesis-description">Energy transition solutions</p>
+                  </div>
+                  <div class="thesis-card-content">
+                    <p>
+                      Investing in innovative extraction technologies, carbon capture, 
+                      and cleaner hydrocarbon solutions during the energy transition phase.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="thesis-card investment-border">
+                  <div class="thesis-card-header">
+                    <i class="fas fa-atom thesis-icon investment-text"></i>
+                    <h3>Quantum Computing</h3>
+                    <p class="thesis-description">Next-generation computing</p>
+                  </div>
+                  <div class="thesis-card-content">
+                    <p>
+                      Backing quantum hardware, algorithms, and software applications 
+                      that will revolutionize computing capabilities and solve previously 
+                      intractable problems.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="thesis-card gold-border">
+                  <div class="thesis-card-header">
+                    <i class="fas fa-chart-line thesis-icon gold-text"></i>
+                    <h3>Financial Innovation</h3>
+                    <p class="thesis-description">Transforming financial services</p>
+                  </div>
+                  <div class="thesis-card-content">
+                    <p>
+                      Backing fintech solutions that democratize access to financial
+                      services and improve efficiency in the financial sector.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="thesis-card investment-border">
+                  <div class="thesis-card-header">
+                    <i class="fas fa-chart-line thesis-icon investment-text"></i>
+                    <h3>Education</h3>
+                    <p class="thesis-description">Future of learning</p>
+                  </div>
+                  <div class="thesis-card-content">
+                    <p>
+                      Investing in edtech platforms that enhance learning outcomes
+                      and provide access to quality education globally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Investment Areas Section -->
+          <section class="section investment-areas">
+            <div class="container">
+              <div class="section-header">
+                <h2>Geographic Investment Focus</h2>
+                <p class="section-subtitle">
+                  We invest in promising ventures across key strategic regions worldwide.
+                </p>
+              </div>
+              
+              <div class="areas-grid">
+                <div class="area-card">
+                  <div class="area-marker investment-bg"></div>
+                  <div class="area-content">
+                    <div class="area-header">
+                      <span class="area-flag">🇺🇸</span>
+                      <h3>United States</h3>
+                    </div>
+                    <p>Innovative startups across technology hubs like Silicon Valley, Austin, and New York</p>
+                  </div>
+                </div>
+                
+                <div class="area-card">
+                  <div class="area-marker gold-bg"></div>
+                  <div class="area-content">
+                    <div class="area-header">
+                      <span class="area-flag">🇦🇪</span>
+                      <h3>Dubai</h3>
+                    </div>
+                    <p>Emerging ventures in finance, real estate, and sustainable urban development</p>
+                  </div>
+                </div>
+                
+                <div class="area-card">
+                  <div class="area-marker investment-bg"></div>
+                  <div class="area-content">
+                    <div class="area-header">
+                      <span class="area-flag">🇮🇳</span>
+                      <h3>India</h3>
+                    </div>
+                    <p>Growing tech ecosystem and infrastructure projects in major metropolitan areas</p>
+                  </div>
+                </div>
+                
+                <div class="area-card">
+                  <div class="area-marker gold-bg"></div>
+                  <div class="area-content">
+                    <div class="area-header">
+                      <span class="area-flag">🇨🇦</span>
+                      <h3>Canada</h3>
+                    </div>
+                    <p>Clean energy solutions and technology startups in Toronto, Vancouver, and Montreal</p>
+                  </div>
+                </div>
+                
+                <div class="area-card">
+                  <div class="area-marker investment-bg"></div>
+                  <div class="area-content">
+                    <div class="area-header">
+                      <span class="area-flag">🇬🇧</span>
+                      <h3>United Kingdom</h3>
+                    </div>
+                    <p>Fintech innovations and AGI research centers in London and throughout the UK</p>
+                  </div>
+                </div>
+                
+                <div class="area-card">
+                  <div class="area-marker gold-bg"></div>
+                  <div class="area-content">
+                    <div class="area-header">
+                      <span class="area-flag">🇧🇩</span>
+                      <h3>Bangladesh</h3>
+                    </div>
+                    <p>Renewable energy and sustainable development projects in emerging markets</p>
+                  </div>
+                </div>
+                
+                <div class="area-card">
+                  <div class="area-marker investment-bg"></div>
+                  <div class="area-content">
+                    <div class="area-header">
+                      <span class="area-flag">🇵🇰</span>
+                      <h3>Pakistan</h3>
+                    </div>
+                    <p>Infrastructure development and technological innovation in growing urban centers</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="areas-footer">
+                <div class="global-text">
+                  <i class="fas fa-globe"></i>
+                  <span>Actively exploring opportunities in emerging markets worldwide</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Process Section -->
+          <section class="section process-section">
+            <div class="container">
+              <div class="section-header">
+                <h2>Our Investment Process</h2>
+                <p class="section-subtitle">
+                  A transparent and efficient process designed to help founders secure funding and strategic support.
+                </p>
+              </div>
+              
+              <div class="process-steps">
+                <div class="process-step">
+                  <div class="step-number">
+                    <span>01</span>
+                  </div>
+                  <div class="step-content">
+                    <h3>Submit Your Proposal</h3>
+                    <p>Complete our submission form with details about your business and upload your business plan PDF.</p>
+                  </div>
+                </div>
+                
+                <div class="process-step">
+                  <div class="step-number">
+                    <span>02</span>
+                  </div>
+                  <div class="step-content">
+                    <h3>Initial Review</h3>
+                    <p>We'll review your submission within 2-3 weeks and reach out if there's potential alignment.</p>
+                  </div>
+                </div>
+                
+                <div class="process-step">
+                  <div class="step-number">
+                    <span>03</span>
+                  </div>
+                  <div class="step-content">
+                    <h3>Due Diligence</h3>
+                    <p>If selected, we'll conduct deeper analysis and schedule meetings with your team.</p>
+                  </div>
+                </div>
+                
+                <div class="process-step">
+                  <div class="step-number">
+                    <span>04</span>
+                  </div>
+                  <div class="step-content">
+                    <h3>Investment Decision</h3>
+                    <p>Based on due diligence, we'll make a decision on investment terms and structure.</p>
+                  </div>
+                </div>
+                
+                <div class="process-step">
+                  <div class="step-number">
+                    <span>05</span>
+                  </div>
+                  <div class="step-content">
+                    <h3>Partnership & Growth</h3>
+                    <p>Beyond capital, we provide strategic guidance and connections to help scale your business.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- CTA Section -->
+          <section class="section cta-section">
+            <div class="container">
+              <h2>Ready to Take Your Business to the Next Level?</h2>
+              <p class="cta-subtitle">
+                Submit your business proposal today and take the first step toward securing 
+                investment from Abhishek Srivastava.
+              </p>
+              <a href="/submit.html" class="button gold-button">Submit Your Proposal</a>
+            </div>
+          </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-grid">
+              <div class="footer-about">
+                <h3 class="footer-logo">Srivastava <span class="gold-text">Ventures</span></h3>
+                <p>
+                  Investing in exceptional founders and innovative ideas that can transform industries.
+                </p>
+              </div>
+              
+              <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="#about-founder">About Abhishek</a></li>
+                  <li><a href="#investment-thesis">Investment Thesis</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="/submit.html">Submit a Proposal</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Downtown Dallas, DFW, Texas</p>
+                <p>Email: abhishek@srivastavaventures.com</p>
+                <p>Phone: +1 (214) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="footer-copyright">
+              <p>&copy; <span id="current-year"></span> Srivastava Ventures. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
   </body>
 </html>

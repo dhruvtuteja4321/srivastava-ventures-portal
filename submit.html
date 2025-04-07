@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Proposal - Srivastava Ventures</title>
+    <meta name="description" content="Submit your investment proposal to Srivastava Ventures" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      /* Additional styles specific to the submit page */
+      .submit-section {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+      }
+      
+      .submit-form {
+        background-color: #fff;
+        border-radius: 0.75rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        padding: 2rem;
+        width: 100%;
+        max-width: 48rem;
+        margin: 0 auto;
+      }
+      
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+      
+      .form-group label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+      
+      .form-control {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid var(--gray-300);
+        border-radius: 0.375rem;
+        font-family: inherit;
+      }
+      
+      .form-control:focus {
+        outline: none;
+        border-color: var(--investment-500);
+        box-shadow: 0 0 0 3px rgba(26, 86, 255, 0.1);
+      }
+      
+      textarea.form-control {
+        min-height: 8rem;
+        resize: vertical;
+      }
+      
+      .range-slider {
+        margin: 1.5rem 0;
+      }
+      
+      .range-labels {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        color: var(--gray-600);
+      }
+      
+      .file-upload {
+        border: 2px dashed var(--gray-300);
+        padding: 2rem;
+        text-align: center;
+        border-radius: 0.375rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      
+      .file-upload:hover {
+        border-color: var(--investment-500);
+        background-color: var(--investment-50);
+      }
+      
+      .custom-file-input {
+        display: none;
+      }
+      
+      .form-footer {
+        margin-top: 2rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="background-overlay"></div>
+      <div class="content-wrapper">
+        <!-- Header -->
+        <header class="header">
+          <div class="container header-container">
+            <div class="logo">
+              <a href="/">Srivastava <span class="gold-text">Ventures</span></a>
+            </div>
+            
+            <nav class="desktop-nav">
+              <a href="/" class="nav-link">Home</a>
+              <a href="/#about-founder" class="nav-link">About Abhishek</a>
+              <a href="/#investment-thesis" class="nav-link">Investment Thesis</a>
+              <a href="/#portfolio" class="nav-link">Portfolio</a>
+              <a href="/submit.html" class="nav-link">Submit</a>
+            </nav>
+            
+            <div class="header-cta">
+              <a href="/submit.html" class="button primary-button">Submit Proposal</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          
+          <div class="mobile-menu" id="mobileMenu">
+            <a href="/" class="mobile-nav-link">Home</a>
+            <a href="/#about-founder" class="mobile-nav-link">About Abhishek</a>
+            <a href="/#investment-thesis" class="mobile-nav-link">Investment Thesis</a>
+            <a href="/#portfolio" class="mobile-nav-link">Portfolio</a>
+            <a href="/submit.html" class="mobile-nav-link">Submit</a>
+            <a href="/submit.html" class="button primary-button mobile-cta">Submit Proposal</a>
+          </div>
+        </header>
+        
+        <main>
+          <!-- Submit Section -->
+          <section class="section submit-section">
+            <div class="container">
+              <div class="section-header">
+                <h1>Submit Your Investment Proposal</h1>
+                <p class="section-subtitle">
+                  Complete the form below to submit your business proposal for review by Abhishek Srivastava.
+                </p>
+              </div>
+              
+              <form class="submit-form" id="proposalForm">
+                <div class="form-group">
+                  <label for="fullName">Full Name *</label>
+                  <input type="text" id="fullName" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="company">Company/Project Name *</label>
+                  <input type="text" id="company" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="website">Website (if available)</label>
+                  <input type="url" id="website" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                  <label for="investmentAmount">Investment Amount Needed *</label>
+                  <input type="range" id="investmentAmount" min="10000" max="1000000" step="10000" class="range-slider form-control" value="100000" required>
+                  <div class="range-labels">
+                    <span>$10,000</span>
+                    <span id="investmentValue">$100,000</span>
+                    <span>$1,000,000</span>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="category">Investment Category *</label>
+                  <select id="category" class="form-control" required>
+                    <option value="">Select a category</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="RenewableEnergy">Renewable Energy</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="AGISaaS">AGI SaaS</option>
+                    <option value="Hydrocarbons">Hydrocarbons & Shale Oil</option>
+                    <option value="QuantumComputing">Quantum Computing</option>
+                    <option value="FinancialInnovation">Financial Innovation</option>
+                    <option value="Education">Education</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="description">Business Description *</label>
+                  <textarea id="description" class="form-control" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                  <label>Business Plan/Pitch Deck (PDF, max 10MB) *</label>
+                  <div class="file-upload" id="fileUploadArea">
+                    <i class="fas fa-cloud-upload-alt fa-3x" style="color: var(--gray-400); margin-bottom: 1rem;"></i>
+                    <p>Click to upload or drag and drop</p>
+                    <p class="text-sm" style="color: var(--gray-500); font-size: 0.875rem;">PDF format only, max 10MB</p>
+                    <input type="file" id="businessPlan" class="custom-file-input" accept=".pdf" required>
+                  </div>
+                  <div id="fileInfo" style="margin-top: 0.5rem; display: none;">
+                    <p id="fileName" style="font-size: 0.875rem;"></p>
+                    <button type="button" id="removeFile" class="button outline-button" style="font-size: 0.75rem; padding: 0.25rem 0.5rem; margin-top: 0.5rem;">Remove</button>
+                  </div>
+                </div>
+                
+                <div class="form-footer">
+                  <button type="submit" class="button primary-button">Submit Proposal</button>
+                </div>
+              </form>
+            </div>
+          </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-grid">
+              <div class="footer-about">
+                <h3 class="footer-logo">Srivastava <span class="gold-text">Ventures</span></h3>
+                <p>
+                  Investing in exceptional founders and innovative ideas that can transform industries.
+                </p>
+              </div>
+              
+              <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/#about-founder">About Abhishek</a></li>
+                  <li><a href="/#investment-thesis">Investment Thesis</a></li>
+                  <li><a href="/#portfolio">Portfolio</a></li>
+                  <li><a href="/submit.html">Submit a Proposal</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Downtown Dallas, DFW, Texas</p>
+                <p>Email: abhishek@srivastavaventures.com</p>
+                <p>Phone: +1 (214) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="footer-copyright">
+              <p>&copy; <span id="current-year"></span> Srivastava Ventures. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Investment slider functionality
+        const investmentSlider = document.getElementById('investmentAmount');
+        const investmentValue = document.getElementById('investmentValue');
+        
+        if (investmentSlider && investmentValue) {
+          // Format number to currency
+          const formatCurrency = (value) => {
+            return '$' + parseInt(value).toLocaleString();
+          };
+          
+          // Update value on slider change
+          investmentSlider.addEventListener('input', function() {
+            investmentValue.textContent = formatCurrency(this.value);
+          });
+          
+          // Initialize with default value
+          investmentValue.textContent = formatCurrency(investmentSlider.value);
+        }
+        
+        // File upload functionality
+        const fileInput = document.getElementById('businessPlan');
+        const fileUploadArea = document.getElementById('fileUploadArea');
+        const fileInfo = document.getElementById('fileInfo');
+        const fileName = document.getElementById('fileName');
+        const removeFile = document.getElementById('removeFile');
+        
+        if (fileInput && fileUploadArea && fileInfo && fileName && removeFile) {
+          // Handle file upload area click
+          fileUploadArea.addEventListener('click', () => {
+            fileInput.click();
+          });
+          
+          // Handle file drag events
+          fileUploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            fileUploadArea.style.borderColor = var(--investment-500);
+            fileUploadArea.style.backgroundColor = var(--investment-50);
+          });
+          
+          fileUploadArea.addEventListener('dragleave', () => {
+            fileUploadArea.style.borderColor = '';
+            fileUploadArea.style.backgroundColor = '';
+          });
+          
+          fileUploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            fileUploadArea.style.borderColor = '';
+            fileUploadArea.style.backgroundColor = '';
+            
+            if (e.dataTransfer.files.length) {
+              fileInput.files = e.dataTransfer.files;
+              updateFileInfo();
+            }
+          });
+          
+          // Handle file selection
+          fileInput.addEventListener('change', updateFileInfo);
+          
+          // Remove selected file
+          removeFile.addEventListener('click', () => {
+            fileInput.value = '';
+            fileInfo.style.display = 'none';
+            fileUploadArea.style.display = 'block';
+          });
+          
+          // Update file info display
+          function updateFileInfo() {
+            if (fileInput.files.length) {
+              const file = fileInput.files[0];
+              
+              // Check if file is PDF
+              if (!file.type.match('application/pdf')) {
+                alert('Please select a PDF file only.');
+                fileInput.value = '';
+                return;
+              }
+              
+              // Check file size (max 10MB)
+              if (file.size > 10 * 1024 * 1024) {
+                alert('File size must be less than 10MB.');
+                fileInput.value = '';
+                return;
+              }
+              
+              fileName.textContent = file.name;
+              fileInfo.style.display = 'block';
+              fileUploadArea.style.display = 'none';
+            } else {
+              fileInfo.style.display = 'none';
+              fileUploadArea.style.display = 'block';
+            }
+          }
+        }
+        
+        // Form submission
+        const proposalForm = document.getElementById('proposalForm');
+        
+        if (proposalForm) {
+          proposalForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show an alert
+            alert('Thank you for submitting your proposal. We will review it and contact you soon.');
+            proposalForm.reset();
+            
+            if (fileInfo) {
+              fileInfo.style.display = 'none';
+            }
+            
+            if (fileUploadArea) {
+              fileUploadArea.style.display = 'block';
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
